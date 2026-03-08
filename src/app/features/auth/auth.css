@@ -1,0 +1,23 @@
+.auth-side-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-side-panel::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
+    background-image: url('/images/Overlay.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(200px);
+    z-index: 0;
+}
+
+.auth-side-panel>* {
+    position: relative;
+    z-index: 1;
+}
