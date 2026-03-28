@@ -3,6 +3,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "authCore": [
+        "./dist/auth-core"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -28,6 +33,12 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/auth-core/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/auth-core/tsconfig.spec.json"
     }
   ]
 }
